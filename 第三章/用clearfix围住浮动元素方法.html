@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        section {border:3px solid
+            red;}
+        img {float: left}
+        p{ margin: 0 0 10px 0}
+
+
+        .clearfix:after {
+            content: ".";
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+        footer {border: 3px solid rebeccapurple;
+            margin: 10px;}
+
+    </style>
+</head>
+<body>
+<section>
+    <img src="haha.jpg">
+    <p class="clearfix">This text sits next to the image and because the…</p>
+    <img src="haha.jpg">
+    <p class="clearfix">This text is short, so the next image can float up…</p>
+    <img src="haha.jpg">
+    <p class="clearfix">Because the previous image’s text does not…</p>
+</section>
+<footer>
+    this is footer
+</footer>
+</body>
+</html>
