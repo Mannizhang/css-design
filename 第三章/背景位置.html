@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景重复</title>
+    <style>
+
+        p.repeat{
+            background-repeat: repeat;
+            background-image: url(haha.jpg);
+            width: 400px;
+            height: 120px;
+            background-position:top left;
+        }
+        p.repeat-x{
+            background-repeat: repeat-x;
+            background-image: url(haha.jpg);
+            width: 400px;
+            height: 120px;
+            background-position: center;
+        }
+        p.repeat-y{
+            background-repeat: repeat-y;
+            background-image: url(haha.jpg);
+            width: 400px;
+            height: 120px;
+            background-position: right;
+        }
+        p.norepeat{
+            background-repeat: no-repeat;
+            background-image: url(haha.jpg);
+            width: 400px;
+            height: 120px;
+            background-position: right bottom;
+        }
+    </style>
+</head>
+<body>
+<p class="repeat">this paragraph will repeat both x and y</p>
+<p class="repeat-x">this paragraph will repeat x </p>
+<p class="repeat-y">this paragraph will repeat y</p>
+<p class="norepeat">this paragraph will not repeat</p>
+</body>
+</html>

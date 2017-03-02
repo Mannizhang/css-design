@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景尺寸</title>
+</head>
+    <style>
+        p.now50{
+            width: 300px;
+            height: 300px;
+            border:3px solid red;
+            background-image: url("haha.jpg");
+            background-repeat: no-repeat;
+            background-size: 50%;
+        }
+        p.now{
+            width: 300px;
+            height: 300px;
+            border:3px solid red;
+            background-image: url("haha.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px 50px;
+        }
+        p.cover{width: 300px;
+            height: 300px;
+            border:3px solid red;
+            background-image: url("haha.jpg");
+            background-repeat: no-repeat;
+        background-size: cover;}
+
+        p.contain{
+            width: 300px;
+            height: 300px;
+            border:3px solid red;
+            background-image: url("haha.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+    </style>
+</head>
+<body>
+<p class="now50">this paragraph will  50%</p>
+<p class="now">this paragraph will 100px 50px </p>
+<p class="cover">this paragraph will cover</p>
+<p class="contain">this paragraph will contain</p>
+</body>
+</html>
+</body>
+</html>
