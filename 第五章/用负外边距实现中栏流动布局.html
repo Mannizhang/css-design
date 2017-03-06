@@ -3,6 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: 1em helvetia, arial, sans-serif;
+        }
+
+        div#main_wrapper {
+            min-width: 600px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 5px 10px;
+            background: #3f7ccf;
+            text-align: center;
+        }
+
+        div#threecolwrap {
+            float: left;
+            width: 100%;
+
+        }
+        div#twocolwrap{
+            float: left;
+            width: 100%;
+            margin-right:-210px;
+
+        }
+        nav{
+            float: left;
+            width: 150px;
+            background: #f00;
+            padding:20px 0px;
+        }
+        nav>*{
+            margin:0 10px;
+
+        }
+
+        article{
+            width: auto;
+            margin-left: 150px;
+            margin-right:210px;
+            background: #eee;
+            padding:20px 0px;
+        }
+        article>{
+            margin:0 20px;}
+        aside{float: left;
+        width: 210px;
+        background: #ffed53;
+            padding:20px 0;}
+        aside>*{
+            margin:0 10px;}
+        footer{
+            clear: both;
+            width: 100%;
+            text-align: center;
+            background-color:aqua;
+
+        }
+
+
+    </style>
 </head>
 <body>
 <div id="main_wrapper">
@@ -12,10 +81,10 @@
     <div id="threecolwrap">
         <div id="twocolwrap">
             <nav>
-                <ol>
+                <ul>
                     <li><a href="#">article1</a></li>
                     <li><a href="#">article2</a></li>
-                </ol>
+                </ul>
             </nav>
             <article>
                 <div id="article1">
@@ -42,7 +111,15 @@
                 </div>
             </article>
         </div>
+            <aside>
+                <h1>The famous Parents</h1>
+                <P>Beckham that he not only has a beautiful and successful wife, but also has three handsome sons and a
+                    lovely daughter. Though he has retired, he is busy all the time. David and his wife put a lot of
+                    attention to their family, no matter how successful they are.</P>
+            </aside>
+
     </div>
+    <footer>This is my website.</footer>
 </div>
 </body>
 </html>
