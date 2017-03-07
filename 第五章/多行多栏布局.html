@@ -12,22 +12,70 @@
         body {
             font: 1em helvetia, arial, sans-serif;
         }
-        header{
-            padding:5px 10px;
-            background:plum;
+
+        header {
+            padding: 5px 10px;
+            background: plum;
             text-align: center;
         }
-        nav{
-            padding:2px 4px;
+
+        nav {
+            padding: 2px 4px;
             background: aquamarine;
             text-align: center;
         }
-        #branding img{
-            width: 1150px;
-            height:400px;
 
+        #branding img {
+            width: 1150px;
+            height: 400px;
+        }
+
+        #feature_area {
+            overflow: hidden;
+        }
+
+        #one {
+            border: 3px solid lightslategrey;
+            margin: 10px 100px;
+            padding: 20px 5px;
+            float: left;
 
         }
+
+        #two {
+            border: 3px solid salmon;
+            margin: 10px 100px;
+            padding: 20px 5px;
+            float: left;
+        }
+
+        #three {
+            border: 3px solid skyblue;
+            margin: 10px 100px;
+            padding: 20px 5px;
+            float: left;
+        }
+
+        #promo_area {
+            clear: both;
+        }
+
+        #promo_area p {
+            border: 3px solid skyblue;
+            margin: 1px 5px;
+            padding: 2px 2px;
+            height: 130px;
+            width: 240px;
+
+        }
+
+        footer {
+            background: blue;
+            text-align: center;
+            font-weight: bold;
+            clear: both;
+        }
+
     </style>
 </head>
 <body>
@@ -45,28 +93,59 @@
     </section><!-- branding 结束 -->
 
     <section id="feature_area">
-        <article>
+        <article id="one">
             <div class="inner">
-                <p>Lorem Ipsum text</p>
+                <p>Angel in my life.</p>
             </div>
         </article>
-        <!-- 省略另外两个 article 元素 -->
+
+        <article id="two">
+            <div class="inner">
+                <p>Sports meeting</p>
+            </div>
+        </article>
+
+
+        <article id="three">
+            <div class="inner">
+                <p>The famous Parents</p>
+            </div>
+
+        </article>
+
     </section><!-- feature_area 结束-->
 
 
     <section id="promo_area">
         <article>
             <div class="inner">
-                <p>Lorem Ipsum text</p>
+                <p>Today, my school held a sports meeting. I felt so excited, because I have taken part in many
+                    matches. I joined the basketball team. I also raced in 200 and 400 meters matchs. </p>
             </div>
         </article>
-        <!-- 省略另外三个 article 元素 -->
+        <article>
+            <div class="inner">
+                <p>Today, my school held a sports meeting. I felt so excited, because I have taken part in many
+                    matches. I joined the basketball team. I also raced in 200 and 400 meters matchs. </p>
+            </div>
+        </article>
+        <article>
+            <div class="inner">
+                <p>Today, my school held a sports meeting. I felt so excited, because I have taken part in many
+                    matches. I joined the basketball team. I also raced in 200 and 400 meters matchs. </p>
+            </div>
+        </article>
+        <article>
+            <div class="inner">
+                <p>Today, my school held a sports meeting. I felt so excited, because I have taken part in many
+                    matches. I joined the basketball team. I also raced in 200 and 400 meters matchs. </p>
+            </div>
+        </article>
     </section><!-- promo_area 结束-->
 
 
     <footer>
-        <p>A CSS template from <a href="http://www.stylinwithcss.com"><em>Stylin’ with CSS, Third Edition</em></a> by
-            Charles Wyke-Smith</p>
+        <p>A CSS template from <a href="http://www.stylinwithcss.com"></a></p>
     </footer>
 </div>
 </body>
