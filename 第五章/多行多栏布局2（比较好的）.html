@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多行多栏布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: 1em helvetia, arial, sans-serif;
+        }
+
+        header {
+            padding: 5px 10px;
+            background: plum;
+            text-align: center;
+        }
+
+        nav {
+            padding: 2px 4px;
+            background: aquamarine;
+            text-align: center;
+        }
+
+        #branding img {
+            width: 1150px;
+            height: 400px;
+        }
+
+        section#feature_area article {
+            float: left;
+            width: 320px;
+            /*对于作为栏的容器，只能添加垂直内边距*/
+            padding: 10px 0;
+            background: #fff;
+            border-top: 4px solid #f7be84;
+        }
+
+        section#feature_area article .inner {
+            margin: 10px 20px;
+            padding: 5px;
+            background: #fff;
+            border: 5px solid;
+        }
+
+        section#feature_area article:nth-child(1) .inner {
+            border-color: #d7dd6f;
+        }
+
+        section#feature_area article:nth-child(2) .inner {
+            border-color: #f6dec5;
+        }
+
+        section#feature_area article:nth-child(3) .inner {
+            border-color: #d1d8e4;
+        }
+
+        #promo_area {
+            box-sizing: border-box;
+        }
+
+        #promo_area p {
+
+            margin: 1px 30px;
+            padding: 2px 2px;
+            height: 140px;
+            width: 220px;
+            box-sizing: border-box;
+            background: skyblue;
+            float: left;
+
+        }
+
+        footer {
+            background: blue;
+            text-align: center;
+            font-weight: bold;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Full-width content</h1>
+    </header>
+
+    <nav>
+        <p>Navigation menus go here</p>
+    </nav>
+
+    <section id="branding">
+        <img src="timg.jpg" alt="Grand Canyon"/>
+    </section><!-- branding 结束 -->
+
+    <section id="feature_area">
+        <article>
+            <div class="inner">
+                <p>Angel in my life.</p>
+            </div>
+        </article>
+
+        <article>
+            <div class="inner">
+                <p>Sports meeting</p>
+            </div>
+        </article>
+
+
+        <article>
+            <div class="inner">
+                <p>The famous Parents</p>
+            </div>
+
+        </article>
+
+    </section><!-- feature_area 结束-->
+
+
+    <section id="promo_area">
+        <article>
+            <div class="inner">
+                <p>Today, my school held a sports meeting. I felt so excited, because I have taken part in many
+                    matches. I joined the basketball team. I also raced in 200 and 400 meters matchs. </p>
+            </div>
+        </article>
+        <article>
+            <div class="inner">
+                <p>Today, my school held a sports meeting. I felt so excited, because I have taken part in many
+                    matches. I joined the basketball team. I also raced in 200 and 400 meters matchs. </p>
+            </div>
+        </article>
+        <article>
+            <div class="inner">
+                <p>Today, my school held a sports meeting. I felt so excited, because I have taken part in many
+                    matches. I joined the basketball team. I also raced in 200 and 400 meters matchs. </p>
+            </div>
+        </article>
+        <article>
+            <div class="inner">
+                <p>Today, my school held a sports meeting. I felt so excited, because I have taken part in many
+                    matches. I joined the basketball team. I also raced in 200 and 400 meters matchs. </p>
+            </div>
+        </article>
+    </section><!-- promo_area 结束-->
+
+
+    <footer>
+        <p>A CSS template from <a href="http://www.stylinwithcss.com"></a></p>
+    </footer>
+</div>
+</body>
+</html>
