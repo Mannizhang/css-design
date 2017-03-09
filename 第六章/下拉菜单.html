@@ -4,60 +4,35 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-    /*添加视觉样式*/
-.multi_drop_menu {font:1em helvetica, arial, sans-serif;}
-.multi_drop_menu a {
-    /*让链接充满列表项*/
-    display:block;
-    /*文本颜色*/
-    color:#555;
-    /*背景颜色*/
+.multi_drop_menu{
+    font:1em Helvetica,arial,sans-serif;}
+        .multi_drop_menu a {
+            display: block;
+            color:#555;
+border-width:3px ;
     background-color:#eee;
-    /*链接的内边距*/
-    padding:.2em 1em;
-    /*分隔线宽度*/
-    border-width:3px;
-    /*可以有颜色，也可以透明*/
-    border-color:transparent;
-}
-.multi_drop_menu a:hover {
-    /*悬停时文本颜色*/
-    color:#fff;
-    /*悬停时背景色*/
-    background-color:#aaa;
-}
-.multi_drop_menu a:active {
-    /*点击时背景变色*/
-    background:#fff;
-    /*点击时文本变色*/
-    color:#ccc;
+            padding:2em 1em ;
+            border-color: transparent;
+        }
+        .multi_drop_menu a:hover{
+            color:#fff;
+            background-color:#aaa;
+        }
+.multi_drop_menu a:active{
+    background: #fff;
+    color: #ccc;
 }
 
-/*添加功能样式*/
-.multi_drop_menu * {margin:0; padding:0;}
-/*强制ul包围li*/
-.multi_drop_menu ul {float:left;}
-.multi_drop_menu li {
-    /*水平排列菜单项*/
-    float:left;
-    /*去掉默认的项目符号*/
-    list-style-type:none;
-    /*为子菜单提供定位上下文*/
-    position:relative;
-}
-.multi_drop_menu li a {
-    /*让链接填充列表项*/
-    display:block;
-    /*给每个链接添加一个右边框*/
-    border-right-style:solid;
-    /*背景只出现在内边距区域后面*/
-    background-clip:padding-box;
-    /*去掉链接的下划线*/
-    text-decoration:none;
-}
-.multi_drop_menu li:last-child a {border-right-style:none;}
-/*临时隐藏低级菜单*/
-.multi_drop_menu li ul {display:none;}
+
+        .multi_drop_menu * {margin:0; padding:0;}
+      .multi_drop_menu ul{
+          float: left;}
+        .multi_drop_menu li {
+            float: left;
+            position: relative;
+            list-style-type: none;
+            
+        }
     </style>
 </head>
 <body>
