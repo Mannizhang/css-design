@@ -279,6 +279,201 @@
             float: right;
         }
 
+        form.signin {
+            width: 19em;
+            float: right;
+            background: #fff;
+            border-radius: 10px 0 10px 0;
+            box-shadow: 0 12px 8px -9px #555;
+        }
+
+        .signin fieldset {
+            border: 0;
+            margin: 10px 14px;
+        }
+
+        .signin legend span {
+            font-family: Lato, helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 1.3em;
+            line-height: 1.1em;
+            color: #4eb8ea;
+            letter-spacing: -.05em;
+        }
+
+        .signin section {
+            overflow: hidden;
+            padding: .25em 0;
+        }
+
+        .signin section label {
+            font-family: "Source Sans Pro", helvetica, sans-serif;
+            font-weight: 400;
+            float: left;
+            width: 5em;
+            margin: .5em .3em 0 0;
+            line-height: 1.1;
+            color: #555;
+        }
+
+        .signin section input {
+            float: right;
+            width: 10.5em;
+            margin: .2em 0 0 .5em;
+            padding: 3px 10px 2px;
+            color: #555;
+            font-size: .8em;
+            outline: none;
+            border-radius: 10px 0 10px 0;
+        }
+
+        input:-webkit-autofill {
+            color: #fff !important;
+        }
+
+
+        .signin section input[type=submit] {
+            float: right;
+            width: auto;
+            margin: 0 2px 3px 0;
+            padding: 0px 8px 3px;
+            font-size: 1em;
+            font-weight: 800;
+            color: #fff;
+            border: none;
+            background-color: #d6e636;
+            box-shadow: 1px 1px 2px #888;
+        }
+
+        .signin section p { /*内容为“not signed up?”*/
+            float: right;
+            clear: both;
+            margin: .2em 0 0;
+            text-align: right;
+            font-size: .8em;
+            line-height: 1;
+            color: #555;
+        }
+
+        .signin section p a {
+            color: #333;
+            text-decoration: none;
+        }
+
+
+        .signin section p a:hover {
+            color: #777;
+            text-decoration: none;
+        }
+
+        .signin section p.direction.error {
+            display: block;
+            color: #f00;
+        }
+
+        .signin section p.direction {
+            display: none;
+        }
+        section#feature_area nav{
+            width: 19em;/*和表单同宽*/
+            float: right;
+            margin:15px 0 0;
+            padding:.6em 0em .75em;
+            background: #fff;
+            border-radius: 10px 0 10px 0;
+            box-shadow: 0 12px 8px -9px #555555;
+        }
+
+        #feature_area h3{
+            padding:0 14px 0;
+            font-family:Lato, helvetica, sans-serif;
+            font-weight: 700;
+            font-size:1.3em;
+            text-align: left;
+            color: #aaa;
+            letter-spacing: -.05em;
+        }
+        #feature_area nav ul{
+            margin:0em 0 0 20px;
+        }
+        #feature_area nav li{
+            padding:.7em 0 0 2em;
+            position: relative;
+            list-style-type: none;
+        }
+
+        #feature_area nav li:before { /*定制项目符号*/
+            content: "";
+            position: absolute; /*相对于列表项定位*/
+            height: 10px;
+            width: 10px;
+            left: 12px;
+            top: 12px;
+            border-radius: 5px 0 5px 0;
+            background-color: #d6e636;
+            box-shadow: 1px 1px 2px #888;
+        }
+        #feature_area nav li a{
+            display: block;
+            text-decoration: none;
+            font-size: .9em;
+            color: #616161;
+
+        }
+        #feature_area nav li a:hover{
+            color: #000000;
+        }
+
+        section#book_area{
+            clear: both;
+            border-radius: 20px 0px 20px 0px;
+            border:1px solid #f58c21;
+            margin:8px 0 16px;
+            overflow: hidden;
+        }
+        #book_area article{
+            float: left;
+            width: 25%;
+            padding:10px 0;
+            background: none;
+        }
+        #book_area article .inner { /*封面外包装*/
+            position: relative;
+            width: 140px;
+            margin: 0 auto;
+        }
+
+        #book_area .inner h3 { /*旋转文字*/
+            position: absolute;
+            width: 160px;
+            left: 100%;
+            bottom: 90px; /*把文字定位在图书右侧*/
+            transform: rotate(-90deg);
+            transform-origin: left bottom;
+            color: #ccc;
+            font-size: 1.4em;
+            font-family: Lato, helvetica, sans-serif;
+            font-style: normal;
+            font-weight:600;
+            text-align: left;
+        }
+
+        #book_area article.right:last-child h3 {
+            left: 85%;
+        }
+
+        #book_area article img {
+            box-shadow: 0 12px 8px -9px #555;
+        }
+        #book_area article aside{
+            display: none;
+        }
+
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -332,32 +527,89 @@
                 <fieldset>
                     <legend><span>sign in for code and updates</span></legend>
                     <section>
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
 
-            </section>
-            <section>
-                <label for="password">passwork</label>
-                <input type="password" id="password" name="password" maxlength="20"/>
-                <p class="direction">Wrong user name or password</p>
-            </section>
-            <section>
-                <input type="submit" value="sign in"/>
-                 <p class="signup">Not signed up? <a href="#">Register now!</a></p>
-            </section>
-        </fieldset>
-        </form>
-        <nav>
-            <h3>recent articles</h3>
-        </nav>
-    </aside>
+                    </section>
+                    <section>
+                        <label for="password">passwork</label>
+                        <input type="password" id="password" name="password" maxlength="20"/>
+                        <p class="direction error">Wrong user name or password</p>
+                    </section>
+                    <section>
+                        <input type="submit" value="sign in"/>
+                        <p class="signup">Not signed up? <a href="#">Register now!</a></p>
+                    </section>
+                </fieldset>
+            </form>
+            <nav>
+                <h3>recent articles</h3>
+                <ul>
+                    <li><a href="#">Z-index&mdash;Layers of Confusion</a></li>
+                    <li><a href="#">Box-Image Techniques</a></li>
+                    <li><a href="#">Shadow FX with CSS3</a></li>
+                </ul>
+            </nav>
+        </aside>
 </section>
     <section id="book_area">
-        <article>
-            <div id="inner">
-
+        <article class="left">
+            <div class="inner">
+                <h3>HTML5 + CSS3</h3>
+                <img src="haha.jpg" alt="pipixia" width="100" height="150">
+                <aside><!--弹出层-->
+                    <ol>
+                        <li><a href="#">Download the Code</a></li>
+                        <li><a href="#">Table of Contents</a></li>
+                        <li><a href="#">Buy this Book</a></li>
+                        </li>
+                    </ol>
+                </aside>
             </div>
         </article>
+        <article class="left">
+            <div class="inner">
+                <h3>HTML5 + CSS3</h3>
+                <img src="haha.jpg" alt="pipixia" width="100" height="150">
+                <aside><!--弹出层-->
+                    <ol>
+                        <li><a href="#">Download the Code</a></li>
+                        <li><a href="#">Table of Contents</a></li>
+                        <li><a href="#">Buy this Book</a></li>
+                        </li>
+                    </ol>
+                </aside>
+            </div>
+        </article>
+        <article class="left">
+            <div class="inner">
+                <h3>HTML5 + CSS3</h3>
+                <img src="haha.jpg" alt="pipixia" width="100" height="150">
+                <aside><!--弹出层-->
+                    <ol>
+                        <li><a href="#">Download the Code</a></li>
+                        <li><a href="#">Table of Contents</a></li>
+                        <li><a href="#">Buy this Book</a></li>
+                        </li>
+                    </ol>
+                </aside>
+            </div>
+        </article>
+        <article class="left">
+            <div class="inner">
+                <h3>HTML5 + CSS3</h3>
+                <img src="haha.jpg" alt="pipixia" width="100" height="150">
+                <aside><!--弹出层-->
+                    <ol>
+                        <li><a href="#">Download the Code</a></li>
+                        <li><a href="#">Table of Contents</a></li>
+                        <li><a href="#">Buy this Book</a></li>
+                        </li>
+                    </ol>
+                </aside>
+            </div>
+        </article>
+
     </section>
     <footer>
 
