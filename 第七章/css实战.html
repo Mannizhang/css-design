@@ -219,6 +219,7 @@
             background: #ffffff;
             border-radius: 20px 0;
             box-shadow: 0 12px 8px -9px #555;
+            height: 22em;
         }
 
         section#feature_area article a{
@@ -430,6 +431,7 @@
             border:1px solid #f58c21;
             margin:8px 0 16px;
             overflow: hidden;
+
         }
         #book_area article{
             float: left;
@@ -447,7 +449,7 @@
             position: absolute;
             width: 160px;
             left: 100%;
-            bottom: 90px; /*把文字定位在图书右侧*/
+            bottom: -20px; /*把文字定位在图书右侧*/
             transform: rotate(-90deg);
             transform-origin: left bottom;
             color: #ccc;
@@ -467,11 +469,136 @@
         }
         #book_area article aside{
             display: none;
+            position: absolute;
+            z-index: 2;
+            width: 200px;
+            background: #fff;
+            padding: 10px 2px 5px;
+            border: 2px solid #f58c21;
+            border-radius: 10px 0px 10px 0px;
+            box-shadow: 4px 4px 16px #555;
+            color: #555;
+            font-family: "Source Sans Pro", helvetica, sans-serif;
+            font-size: .8em;
+            line-height:2px;
+
+        }
+        #book_area article:hover aside { display:block; }/*鼠标悬停于封面时显示弹出层*/
+        #book_area article aside li{
+            padding: 2px 2px 2px 2px;
+            list-style-type: none;
+            line-height: 1.2em;
+        }
+        #book_area article aside li a{
+            text-decoration: none;
+            font-size: 1.2em;
+            color: #616161;
         }
 
+        #book_area article aside li a:hover {
+            color: #333333;
+        }
 
+        #book_area article.left aside {
+            left: 84%;
+            top: 14px;
+        }
 
+        #book_area article.right aside {
+            right: 84%;
+            top: 14px;
+        }
 
+        #book_area article aside:after { /*橙色三角形*/
+            content: "";
+            position: absolute;
+            top: 33px;
+            border: 12px solid;
+            height: 0;
+            width: 0;
+        }
+        #book_area article.left aside:after{
+            right: 100%;
+            border-color:transparent #f58c21 transparent transparent;
+        }
+        #book_area article.right aside:after{
+            left: 100%;
+            border-color:transparent  transparent transparent #f58c21;
+        }
+        #book_area article aside:before{
+            content: "";
+            position: absolute;
+            top:37px;
+            border: 8px solid;
+            height: 0;
+            width: 0;
+            z-index: 100;
+        }
+        #book_area article.left aside:before{
+            right: 100%;
+            border-color: transparent white transparent transparent;
+
+        }
+        #book_area article.right aside:before{
+            left: 100%;
+            border-color:transparent transparent transparent white ;
+        }
+
+        footer {
+            padding: .5em 0 .35em 0;
+            text-align: center;
+            border-radius: 10px 0px 10px 0px;
+            background: #fff;
+            box-shadow: 0 12px 8px -9px #555;
+        }
+
+        footer p {
+            font-family: 'Source Sans Pro';
+            font-weight: 400;
+            font-size: .85em;
+            letter-spacing: -.05em;
+            color: #555;
+        }
+
+        footer p a {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 700;
+            font-size: 1em;
+            color: #4eb8ea;
+            text-decoration: none;
+        }
+
+        footer p a:hover {
+            color: #777;
+        }
+
+        footer ul {
+            display: inline-block;
+            margin: 4px 0 0;
+        }
+
+        footer li {
+            list-style-type: none;
+            float: left;
+            font-family: "Source Sans Pro";
+            font-weight: 400;
+            font-size: .85em;
+        }
+
+        footer li + li a {
+            border-left: 1px solid #ccc;
+        }
+
+        footer li a {
+            text-decoration: none;
+            color: #aaa;
+            padding: 0 5px;
+        }
+
+        footer a:hover {
+            color: #777;
+        }
 
 
     </style>
@@ -518,7 +645,10 @@
                 <p> A boy went to a shop and bought a pencil and other things. When he was going to pay the bill, he
                     took out his wallet and found he had not enough money to pay. He felt awkward. At that moment, an
                     old man who was incharge of the shop smiled and said to the boy that he could give the rest of the
-                    money next time.The boy was so shocked</p>
+                    money next time.The boy was so shocked A boy went to a shop and bought a pencil and other things.
+                    When he was going to pay the bill, he took out his wallet and found he had not enough money to pay.
+                    A boy went to a shop and bought a pencil and other things. When he was going to pay the bill, he
+                    took out his wallet and found he had not enough money to pay. </p>
             </div>
 
         </article>
@@ -581,7 +711,7 @@
                 </aside>
             </div>
         </article>
-        <article class="left">
+        <article class="right">
             <div class="inner">
                 <h3>HTML5 + CSS3</h3>
                 <img src="haha.jpg" alt="pipixia" width="100" height="150">
@@ -595,7 +725,7 @@
                 </aside>
             </div>
         </article>
-        <article class="left">
+        <article class="right">
             <div class="inner">
                 <h3>HTML5 + CSS3</h3>
                 <img src="haha.jpg" alt="pipixia" width="100" height="150">
@@ -611,9 +741,18 @@
         </article>
 
     </section>
-    <footer>
 
-    </footer>
+<footer>
+    <p>A CSS template from <a href="http://www.stylinwithcss.com"><em>Stylin'
+        with CSS, Third Edition</em></a> by Charles Wyke-Smith</p>
+    <nav>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Charles</a></li>
+        </ul>
+    </nav>
+</footer>
+
 </div>
 </body>
 </html>
